@@ -1,0 +1,33 @@
+{
+    "Level": {
+        "INF": {
+            "timerBetweenAIAsMiliseconde": 1000,
+            "maxAI": 10
+        },
+        "LVL1": {
+            "timerBetweenAIAsMiliseconde": 2000,
+            "maxAI": 5
+        },
+        "LVL2": {
+            "timerBetweenAIAsMiliseconde": 1500,
+            "maxAI": 10
+        },
+        "LVL3": {
+            "timerBetweenAIAsMiliseconde": 1000,
+            "maxAI": 20
+        },
+        "BOSS": {
+            "timerBetweenAIAsMiliseconde": 1000
+        }
+    },
+    "Parameters": {
+        "Waves" : {
+            "timerBetweenWavesAsSeconde": 15
+        },
+        "Game" : {
+            "startLevel": 1,
+            "fps": 30,
+            "startScore": 0
+        }
+    }
+}

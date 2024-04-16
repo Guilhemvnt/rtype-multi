@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://github.com/SFML/SFML/archive/refs/tags/2.6.1.zip'
+tag=''

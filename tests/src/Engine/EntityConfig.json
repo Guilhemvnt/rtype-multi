@@ -1,0 +1,233 @@
+{
+    "Player": {
+        "Health": {
+            "life": 100,
+            "maxHealth": 100
+        },
+        "Collider": {
+            "width": 64,
+            "height": 64,
+            "layer": 1
+        },
+        "Position": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "speed": 5
+        },
+        "Weapon": {
+            "damage": 10,
+            "ammo": 1
+        }
+    },
+    "AI": {
+        "Health": {
+            "life": 1,
+            "maxHealth": 100
+        },
+        "Collider": {
+            "width": 62,
+            "height": 62,
+            "layer": 2
+        },
+        "Position": {
+            "x": 600,
+            "y": 100,
+            "z": 0,
+            "speed": 1
+        },
+        "Weapon": {
+            "damage": 10,
+            "ammo": 1
+        }
+    },
+    "Boss": {
+        "Health": {
+            "life": 1000,
+            "maxHealth": 1000
+        },
+        "Collider": {
+            "width": 200,
+            "height": 200,
+            "layer": 2
+        },
+        "Position": {
+            "x": 550,
+            "y": 100,
+            "z": 0,
+            "speed": 3
+        },
+        "Weapon": {
+            "damage": 20,
+            "ammo": 1
+        }
+    },
+    "Block": {
+        "Health": {
+            "life": 50,
+            "maxHealth": 50
+        },
+        "Collider": {
+            "width": 32,
+            "height": 32,
+            "layer": 2
+        },
+        "Position": {
+            "x": 200,
+            "y": 0,
+            "z": 0,
+            "speed": 1
+        },
+        "Weapon": {
+            "damage": 10,
+            "ammo": 1
+        }
+    },
+    "Bullet0": {
+        "Health": {
+            "life": 1,
+            "maxHealth": 1
+        },
+        "Collider": {
+            "width": 16,
+            "height": 16,
+            "layer": 0
+        },
+        "Position": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "speed": 7
+        },
+        "Weapon": {
+            "damage": 5,
+            "ammo": 0
+        }
+    },
+    "Bullet1": {
+        "Health": {
+            "life": 1,
+            "maxHealth": 1
+        },
+        "Collider": {
+            "width": 27,
+            "height": 27,
+            "layer": 0
+        },
+        "Position": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "speed": 7
+        },
+        "Weapon": {
+            "damage": 5,
+            "ammo": 0
+        }
+    },
+    "Bullet2": {
+        "Health": {
+            "life": 20,
+            "maxHealth": 20
+        },
+        "Collider": {
+            "width": 32,
+            "height": 32,
+            "layer": 0
+        },
+        "Position": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "speed": 7
+        },
+        "Weapon": {
+            "damage": 5,
+            "ammo": 0
+        }
+    },
+    "Bullet3": {
+        "Health": {
+            "life": 20,
+            "maxHealth": 20
+        },
+        "Collider": {
+            "width": 40,
+            "height": 32,
+            "layer": 0
+        },
+        "Position": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "speed": 7
+        },
+        "Weapon": {
+            "damage": 5,
+            "ammo": 0
+        }
+    },
+    "Bullet4": {
+        "Health": {
+            "life": 20,
+            "maxHealth": 20
+        },
+        "Collider": {
+            "width": 50,
+            "height": 32,
+            "layer": 0
+        },
+        "Position": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "speed": 7
+        },
+        "Weapon": {
+            "damage": 5,
+            "ammo": 0
+        }
+    },
+    "BossBullet": {
+        "Health": {
+            "life": 1,
+            "maxHealth": 1
+        },
+        "Collider": {
+            "width": 60,
+            "height": 60,
+            "layer": 0
+        },
+        "Position": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "speed": 10
+        },
+        "Weapon": {
+            "damage": 5,
+            "ammo": 0
+        }
+    },
+    "Rocket": {
+        "Health": {
+            "life": 20,
+            "maxHealth": 20
+        },
+        "Collider": {
+            "width": 50,
+            "height": 32,
+            "layer": 0
+        },
+        "Position": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "speed": 10
+        },
+        "Weapon": {
+            "damage": 5,
+            "ammo": 0
+        }
+    }
+}

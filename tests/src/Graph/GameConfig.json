@@ -1,0 +1,46 @@
+{
+    "Color": {
+        "Button" : {
+            "red": 0,
+            "green": 0,
+            "blue": 255
+        },
+        "InputButton" : {
+            "red": 0,
+            "green": 0,
+            "blue": 255
+        },
+        "Text" : {
+            "red": 255,
+            "green": 255,
+            "blue": 0
+        },
+        "ClickedButton" : {
+            "red": 255,
+            "green": 0,
+            "blue": 255
+        },
+        "powerBar" : {
+            "red": 16,
+            "green": 78,
+            "blue": 150
+        },
+        "ButtonText" : {
+            "red": 255,
+            "green": 255,
+            "blue": 255
+        }
+    },
+    "Config" : {
+        "DefaultserverIP" : {
+            "ipPart1": 127,
+            "ipPart2": 0,
+            "ipPart3": 0,
+            "ipPart4": 1
+        },
+        "Volume" : {
+            "Musique": 50,
+            "Sound": 50
+        }
+    }
+}

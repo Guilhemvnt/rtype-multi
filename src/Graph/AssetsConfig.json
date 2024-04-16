@@ -1,0 +1,202 @@
+{
+    "Player": {
+        "Frame": {
+            "nbrFrame": 0
+        },
+        "Sprite": {
+            "left" : 0,
+            "top": 157,
+            "width": 14,
+            "height": 16
+        }
+    },
+    "AI": {
+        "Frame": {
+            "nbrFrame": 5
+        },
+        "Sprite": {
+            "left" : 0,
+            "top": 0,
+            "width": 16,
+            "height": 16
+        }
+    },
+    "Boss": {
+        "Frame": {
+            "nbrFrame": 3
+        },
+        "Sprite": {
+            "left" : 0,
+            "top": 29,
+            "width": 15,
+            "height": 10
+        }
+    },
+    "Bullet0": {
+        "Frame": {
+            "nbrFrame": 1
+        },
+        "Sprite": {
+            "left" : 0,
+            "top": 51,
+            "width": 6,
+            "height": 6
+        }
+    },
+    "Bullet1": {
+        "Frame": {
+            "nbrFrame": 1
+        },
+        "Sprite": {
+            "left" : 0,
+            "top": 51,
+            "width": 6,
+            "height": 6
+        },
+        "Color" : {
+            "red": 0,
+            "green": 0,
+            "blue": 255
+        }
+    },
+    "Bullet2": {
+        "Frame": {
+            "nbrFrame": 1
+        },
+        "Sprite": {
+            "left" : 0,
+            "top": 51,
+            "width": 6,
+            "height": 6
+        },
+        "Color" : {
+            "red": 0,
+            "green": 255,
+            "blue": 0
+        }
+    },
+    "Bullet3": {
+        "Frame": {
+            "nbrFrame": 1
+        },
+        "Sprite": {
+            "left" : 0,
+            "top": 43,
+            "width": 6,
+            "height": 6
+        }
+    },
+    "Bullet4": {
+        "Frame": {
+            "nbrFrame": 1
+        },
+        "Sprite": {
+            "left" : 0,
+            "top": 43,
+            "width": 6,
+            "height": 6
+        },
+        "Color" : {
+            "red": 255,
+            "green": 0,
+            "blue": 0
+        }
+    },
+    "BossBullet": {
+        "Frame": {
+            "nbrFrame": 1
+        },
+        "Sprite": {
+            "left" : 0,
+            "top": 43,
+            "width": 6,
+            "height": 6
+        }
+    },
+    "Rocket": {
+        "Frame": {
+            "nbrFrame": 1
+        },
+        "Sprite": {
+            "left" : 0,
+            "top": 189,
+            "width": 8,
+            "height": 6
+        }
+    },
+    "PowerUpHealth": {
+        "Frame": {
+            "nbrFrame": 1
+        },
+        "Sprite": {
+            "left" : 0,
+            "top": 252,
+            "width": 7,
+            "height": 7
+        }
+    },
+    "PowerUpSpeed": {
+        "Frame": {
+            "nbrFrame": 1
+        },
+        "Sprite": {
+            "left" : 0,
+            "top": 252,
+            "width": 7,
+            "height": 7
+        },
+        "Color" : {
+            "red": 0,
+            "green": 0,
+            "blue": 255
+        }
+    },
+    "PowerUpDamage": {
+        "Frame": {
+            "nbrFrame": 1
+        },
+        "Sprite": {
+            "left" : 0,
+            "top": 252,
+            "width": 7,
+            "height": 7
+        },
+        "Color" : {
+            "red": 255,
+            "green": 0,
+            "blue": 0
+        }
+    },
+    "PowerUpDoubleShoot": {
+        "Frame": {
+            "nbrFrame": 1
+        },
+        "Sprite": {
+            "left" : 0,
+            "top": 252,
+            "width": 7,
+            "height": 7
+        },
+        "Color" : {
+            "red": 0,
+            "green": 255,
+            "blue": 0
+        }
+    },
+    "PowerUpRocketShoot": {
+        "Frame": {
+            "nbrFrame": 1
+        },
+        "Sprite": {
+            "left" : 0,
+            "top": 252,
+            "width": 7,
+            "height": 7
+        },
+        "Color" : {
+            "red": 255,
+            "green": 255,
+            "blue": 0
+        }
+    }
+}

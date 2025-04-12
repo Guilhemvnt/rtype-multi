@@ -23,15 +23,34 @@ void ObjectManager::removeObject(int id)
         this->objects.erase(id);
 }
 
+void ObjectManager::updateSprite(std::shared_ptr<GameObject> object, int vectorY)
+{
+    object->sprite.setTextureRect(object->spritesRect[vectorY]);
+}
+
+int calculateVectorY(int y, int posY)
+{
+    std::cout << "calculateVectorY " << y << ' ' << posY << std::endl;
+    if (posY < y)
+        return 2;
+    if (posY > y)
+        return 1;
+    return 0;
+}
+
 void ObjectManager::updateObjects(float deltaTime, std::map<int, std::vector<int>> updateData)
 {
+    int vectorY = 0;
     for (auto [id, data] : updateData) {
-        if (objects[id] == nullptr) {
+        if (objects[id] == nullptr) {\
             objects[id] = objectFactory->createObject("entity", id);
-            objects[id]->sprite.setPosition(sf::Vector2f(data[0], data[1]));
-        } else {
-            objects[id]->sprite.setPosition(sf::Vector2f(data[0], data[1]));
         }
+
+        if (objects[id]->type == player) {
+            vectorY = calculateVectorY(data[1], objects[id]->sprite.getPosition().y);
+            updateSprite(objects[id], vectorY);
+        }
+        objects[id]->sprite.setPosition(sf::Vector2f(data[0], data[1]));
     }
 }
 
@@ -50,7 +69,9 @@ void ObjectManager::setTextureRect(int id, int w, int h, enum type t, int player
         std::cerr << "Invalid object ID or object pointer is nullptr." << std::endl;
         return;
     }
+
     this->objects[id]->type = t;
+
     if (t == defaultType) {
         return;
     }
@@ -65,11 +86,17 @@ void ObjectManager::setTextureRect(int id, int w, int h, enum type t, int player
     }
     if (t == player) {
         this->parser.GetJsonInfos("Player", this->parser._parsedData);
-        this->objects[id]->sprite.setTextureRect(sf::IntRect(
+        sf::IntRect playerRect = sf::IntRect(
             this->parser._parsedData["Sprite"]["left"] + (playerId * (this->parser._parsedData["Sprite"]["width"] + 2)),
             this->parser._parsedData["Sprite"]["top"],
             this->parser._parsedData["Sprite"]["width"],
-            this->parser._parsedData["Sprite"]["height"]));
+            this->parser._parsedData["Sprite"]["height"]
+        );  
+        this->objects[id]->sprite.setTextureRect(playerRect);
+
+        this->objects[id]->spritesRect[0] = playerRect;
+        this->objects[id]->spritesRect[1] = sf::IntRect(playerRect.left, playerRect.top - playerRect.height, playerRect.width, playerRect.height);
+        this->objects[id]->spritesRect[2] = sf::IntRect(playerRect.left, playerRect.top + playerRect.height, playerRect.width, playerRect.height);
     }
     if (t == bullet0) {
         this->parser.GetJsonInfos("Bullet0", this->parser._parsedData);

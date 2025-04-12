@@ -1,4 +1,5 @@
 #!/bin/bash
+export PATH=/usr/bin:$PATH
 
 function usage() {
     echo "Usage: $0 [args]"
@@ -10,9 +11,7 @@ function usage() {
 function build() {
     echo "[INFO]: Building project."
 
-    rm -rf build/
-
-    mkdir build && cd build
+    mkdir -p build && cd build
 
     cmake -G Ninja ..
 

@@ -13,7 +13,7 @@
     #include <SFML/Window/Keyboard.hpp>
     #include <iostream>
     #include <memory>
-    #include <vector>
+    #include <array>
 
     enum type {
         defaultType,
@@ -55,6 +55,8 @@
             sf::Vector2f velocity;
             sf::Sprite sprite;
             sf::Texture texture;
+
+            std::array<sf::IntRect, 3> spritesRect;
 
             sf::RectangleShape healthBar;
             sf::RectangleShape backgroundHealthBar;

@@ -29,6 +29,7 @@ class ObjectManager {
         void renderObjects(sf::RenderWindow& window);
 
         void updateStatBar(int id, int x, std::string type);
+        void updateSprite(std::shared_ptr<GameObject> object, int vectorY);
         void setColorHeatlh(int id, sf::Color color);
 
 
